@@ -9,3 +9,7 @@ param(
 Get-ApacheIPs -Page $Page -Status $Status -Browser $Browser |
     Group-Object | Sort-Object Count -Descending |
     Select-Object Count, Name
+. "$PSScriptRoot\PARSINGAPACHELOGS.ps1"
+
+$tableRecords = ApacheLogs1
+$tableRecords | Format-Table -AutoSize -Wrap
