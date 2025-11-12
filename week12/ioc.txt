@@ -1,0 +1,7 @@
+etc/passwd
+/etc/passwd
+/bin/sh
+/bin/bash
+\.\./
+bin/bash
+bin/sh
